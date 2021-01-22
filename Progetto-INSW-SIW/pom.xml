@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<java.version>8</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
@@ -74,6 +74,19 @@
 		</dependency>
 		
 		
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+				
 	</dependencies>
 
 	<build>
@@ -82,11 +95,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-        			<groupId>com.heroku.sdk</groupId>
-        			<artifactId>heroku-maven-plugin</artifactId>
-        			<version>3.0.3</version>
-      			</plugin>
 		</plugins>
 	</build>
 

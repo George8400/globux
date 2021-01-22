@@ -19,7 +19,7 @@
     if ($.fn.owlCarousel) {
         var welcomeSlide = $('.hero-slides');
         var testimonials = $('.testimonials-slide');
-        var albumSlides = $('.albums-slideshow');
+        var scaffaleIndex = $('.carouselIndex');
 
         welcomeSlide.owlCarousel({
             items: 1,
@@ -68,19 +68,18 @@
             autoplay: true
         });
 
-        albumSlides.owlCarousel({
-            items: 5,
+        scaffaleIndex.owlCarousel({
+            items: 1,
             margin: 30,
-            loop: true,
-            nav: true,
-            navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
+            loop: false,
+            nav: false,
             dots: false,
             autoplay: true,
             autoplayTimeout: 5000,
             smartSpeed: 750,
             responsive: {
                 0: {
-                    items: 2
+                    items: 1
                 },
                 400: {
                     items: 3,
@@ -214,3 +213,4 @@
     })
 
 })(jQuery);
+
